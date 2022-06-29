@@ -1,4 +1,10 @@
 package LinkedList;
 
-public class ListException {
+import java.io.IOException;
+
+public class ListException extends IOException {
+    public ListException(String message)
+    {
+        super(message);
+    }
 }
