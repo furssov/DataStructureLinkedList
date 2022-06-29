@@ -35,4 +35,22 @@ class LinkedListTest {
         linkedList.deleteFirst();
         assertEquals(2, linkedList.getnElements());
     }
+
+    @Test
+    void findElement()  {
+        assertTrue(linkedList.findElement(3));
+        assertTrue(linkedList.findElement(4));
+        assertFalse(linkedList.findElement(44));
+    }
+
+
+    @Test
+    void deleteByKey() {
+        int n = 4;
+        assertTrue(linkedList.deleteByKey(3));
+        n--;
+        assertEquals(n, linkedList.getnElements());
+        assertFalse(linkedList.deleteByKey(89));
+        assertEquals(n, linkedList.getnElements());
+    }
 }
