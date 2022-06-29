@@ -41,6 +41,52 @@ private int nElements;
           }
           else return false;
       }
+
+      public boolean findElement(int searchKey) {
+
+              Link link = first;
+              while (link!=null)
+              {
+                  if (link.value == searchKey)
+                  {
+                      return true;
+                  }
+                  else {
+                      link = link.next;
+                  }
+              }
+
+              return false;
+      }
+
+      public boolean deleteByKey(int key)
+      {
+          Link previous = first;
+          Link current = first;
+
+          while (current.value!=key)
+          {
+              if (current.next == null)
+              {
+                  return false;
+              }
+              previous = current;
+              current = current.next;
+          }
+          if (current == first)
+          {
+              nElements--;
+              return deleteFirst();
+          }
+          else
+          {
+              previous.next = current.next;
+              nElements--;
+              return true;
+          }
+      }
+
+
     class Link{
         public int value;
         public Link next;
