@@ -87,12 +87,5 @@ private int nElements;
       }
 
 
-    class Link{
-        public int value;
-        public Link next;
 
-        public Link(int value) {
-            this.value = value;
-        }
-    }
 }
