@@ -1,4 +1,6 @@
-package LinkedList;
+package LinkedList.Link;
+
+import LinkedList.Link.Link;
 
 public class FirstLastList {
     private Link first;

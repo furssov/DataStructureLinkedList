@@ -1,4 +1,6 @@
-package LinkedList;
+package LinkedList.Link;
+
+import LinkedList.Link.Link;
 
 public class LinkedList  implements Cloneable{
 
@@ -6,7 +8,7 @@ private Link first;
 private int nElements;
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
 

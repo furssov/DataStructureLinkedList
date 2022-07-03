@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.Link;
 
 public class Link {
     public int value;
